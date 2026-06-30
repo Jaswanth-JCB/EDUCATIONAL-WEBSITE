@@ -1,0 +1,752 @@
+/* ===================================
+   Bright Future Academy
+   Premium CSS - Part 1
+=================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+
+    width:100%;
+
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+
+}
+
+/* Logo */
+
+.logo{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/* Navigation */
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+}
+
+nav ul li a:hover{
+
+    background:white;
+
+    color:#6A1B9A;
+
+}
+
+/* Hero Section */
+
+.hero{
+
+    height:90vh;
+
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA,#CE93D8);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    color:white;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#6A1B9A;
+
+    text-decoration:none;
+
+    padding:16px 38px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:#F3E5F5;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+/* Common Section */
+
+section{
+
+    padding:80px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#6A1B9A;
+
+    margin-bottom:50px;
+
+}
+/* ===================================
+   Premium CSS - Part 2
+   Cards | About | Courses | Statistics
+=================================== */
+
+/* WHY CHOOSE US */
+
+.why{
+    background:#f9f4ff;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(106,27,154,.25);
+}
+
+.card h3{
+    color:#6A1B9A;
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.card p{
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+}
+
+.card .btn{
+    margin-top:20px;
+}
+
+/* ABOUT PAGE */
+
+.about-text{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    font-size:20px;
+    line-height:1.9;
+    color:#555;
+}
+
+.message-box{
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.message-box h2{
+    color:#6A1B9A;
+    margin-bottom:20px;
+}
+
+.message-box p{
+    font-size:19px;
+    line-height:1.8;
+    text-align:center;
+}
+
+/* COURSE CARDS */
+
+.course-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+}
+
+.course-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.course-content{
+    padding:25px;
+}
+
+.course-content h3{
+    color:#6A1B9A;
+    margin-bottom:15px;
+}
+
+.course-content p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+/* STATISTICS */
+
+.stats{
+
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA);
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.stat{
+    margin:20px;
+}
+
+.stat h2{
+    font-size:52px;
+    color:white;
+}
+
+.stat p{
+    font-size:22px;
+}
+
+/* PAGE TITLES */
+
+.page-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.page-title h1{
+    color:#6A1B9A;
+    font-size:48px;
+}
+
+.page-title p{
+    font-size:20px;
+    color:#666;
+    margin-top:15px;
+}
+/* ===================================
+   Premium CSS - Part 3
+   Gallery | Contact | Footer
+=================================== */
+
+/* ======================
+   GALLERY
+====================== */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.gallery-item{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(106,27,154,.25);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-item h3{
+    padding:18px;
+    text-align:center;
+    color:#6A1B9A;
+    font-size:22px;
+}
+
+/* ======================
+   CONTACT PAGE
+====================== */
+
+.contact-section{
+    max-width:750px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.contact-section h2{
+    text-align:center;
+    color:#6A1B9A;
+    margin-bottom:30px;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus{
+    border-color:#8E24AA;
+    box-shadow:0 0 10px rgba(142,36,170,.2);
+}
+
+#contactForm textarea{
+    resize:vertical;
+}
+
+#contactForm button{
+    width:100%;
+    padding:15px;
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA);
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#contactForm button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(106,27,154,.25);
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+footer{
+    background:#4A148C;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+footer p{
+    font-size:17px;
+    letter-spacing:.5px;
+}
+/* ===================================
+   Premium CSS - Part 4
+   Animations & Responsive Design
+=================================== */
+
+/* Fade Animation */
+
+.hero-content,
+.card,
+.gallery-item,
+.contact-section,
+.message-box{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Smooth Image Hover */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f3e5f5;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8E24AA;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#6A1B9A;
+}
+
+/* Selection */
+
+::selection{
+    background:#8E24AA;
+    color:white;
+}
+
+/* Responsive Design */
+
+@media(max-width:992px){
+
+header{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    margin-bottom:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+nav ul li{
+
+    margin:10px;
+
+}
+
+.hero{
+
+    height:auto;
+
+    padding:100px 20px;
+
+}
+
+.hero h1{
+
+    font-size:50px;
+
+}
+
+.hero h2{
+
+    font-size:45px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+.stats{
+
+    flex-direction:column;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+    padding:60px 25px;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+nav ul li{
+
+    margin:8px 0;
+
+}
+
+.btn{
+
+    font-size:18px;
+
+    padding:14px 30px;
+
+}
+
+.stat h2{
+
+    font-size:40px;
+
+}
+
+.stat p{
+
+    font-size:18px;
+
+}
+
+.contact-section{
+
+    padding:25px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero h2{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+section h2{
+
+    font-size:30px;
+
+}
+
+.card{
+
+    padding:25px;
+
+}
+
+}
